@@ -14,7 +14,7 @@
 
 class WebScrapping {
 	
-	public static  $url = "http://nucleosp.flexcontact.com.br/validacao/atlasfront/crbst_3.html";
+	public static  $url = " url_";
 
     
     /**
@@ -58,7 +58,7 @@ class WebScrapping {
 		$imagens = $image;
 		foreach($imagens as $imagem) {
 			   $posicao =  $imagem->getAttribute('src'). '<br/>';
-			   echo "<img src='http://nucleosp.flexcontact.com.br/validacao/atlasfront/".$posicao."' />";
+			   echo "<img src='http://meusite.com.br/blog/resource/".$posicao."' />";
 		}
 	}
 
@@ -71,7 +71,7 @@ class WebScrapping {
 		$links = $link;
 		foreach($links as $link ) {
 				$url = $link->getAttribute('href');
-				echo "<a href='http://nucleosp.flexcontact.com.br/validacao/atlasfront/". $url ."' >Link</a><br/>";
+				echo "<a href='http://meusite.com.br/blog/resource/". $url ."' >Link</a><br/>";
         }
 	} 
 }
